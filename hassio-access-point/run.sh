@@ -147,3 +147,8 @@ if $(bashio::config.true "dhcp"); then
     logger "## Starting dnsmasq daemon" 1
     dnsmasq -C /dnsmasq.conf
 fi
+
+
+while true; do
+  sleep 1
+done

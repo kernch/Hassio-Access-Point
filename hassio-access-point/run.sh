@@ -148,6 +148,7 @@ if $(bashio::config.true "dhcp"); then
     dnsmasq -C /dnsmasq.conf
 fi
 
+route add -host 192.168.200.251 dev $INTERFACE
 
 while true; do
   sleep 1
